@@ -21,6 +21,6 @@
     ],
     "includeDir": ".",
     "srcDir": ".",
-    "srcFilter": ["-<*>", "+<driver>", "+<conversions>", "+<sensors>"]
+    "srcFilter": ["-<*>", "+<target/esp32s3>", "+<driver>", "+<conversions>", "+<sensors>"]
   }
 }
