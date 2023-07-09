@@ -350,7 +350,7 @@ esp_err_t ll_cam_init_isr(cam_obj_t *cam)
 	}
 
     ret = esp_intr_alloc_intrstatus(ETS_LCD_CAM_INTR_SOURCE,
-                                     ESP_INTR_FLAG_LOWMED | ESP_INTR_FLAG_SHARED | ESP_INTR_FLAG_IRAM,
+                                     ESP_INTR_FLAG_LOWMED | ESP_INTR_FLAG_SHARED,
                                      (uint32_t)&LCD_CAM.lc_dma_int_st.val, LCD_CAM_CAM_VSYNC_INT_ST_M,
                                      ll_cam_vsync_isr, cam, &cam->cam_intr_handle);
 	if (ret != ESP_OK) {
